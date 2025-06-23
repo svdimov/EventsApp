@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <main>
+
+        <!-- Delete Event Form -->
+        <section id="edit">
+
+            <div class="form">
+                <h2>Delete Event</h2>
+                <form method="post">
+                    {{ form }}
+                    {% csrf_token %}
+
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main>
+
+        <!-- Add Event Form -->
+        <section id="create">
+            <div class="form">
+                <h2>New Event</h2>
+                <form method="post">
+                    {{ form }}
+                    {% csrf_token %}
+
+                    <button type="submit">Create Event</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+{% endblock %}
